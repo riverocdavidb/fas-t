@@ -1,1 +1,1 @@
-<?php include_once("main-panel.html"); ?>
+<?php include_once("panel-fas.html"); ?>
