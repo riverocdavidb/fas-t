@@ -27,14 +27,14 @@ $(function () {
     'skin-black',
     'skin-red',
     'skin-yellow',
-    'skin-purple',
+    'skin-holistic-blue',
     'skin-green',
     'skin-blue-light',
     'skin-black-light',
     'skin-red-light',
     'skin-yellow-light',
     'skin-purple-light',
-    'skin-green-light'
+    'skin-green-light'  
   ]
 
   /**
@@ -47,7 +47,7 @@ $(function () {
     if (typeof (Storage) !== 'undefined') {
       return localStorage.getItem(name)
     } else {
-      window.alert('Please use a modern browser to properly view this template!')
+      window.alert('¡Por favor use un navegador actualizado para visualizar correctamente la aplicación!')
     }
   }
 
@@ -62,7 +62,7 @@ $(function () {
     if (typeof (Storage) !== 'undefined') {
       localStorage.setItem(name, val)
     } else {
-      window.alert('Please use a modern browser to properly view this template!')
+      window.alert('¡Por favor use un navegador actualizado para visualizar correctamente la aplicación!')
     }
   }
 
@@ -169,7 +169,7 @@ $(function () {
   // Create the tab button
   var $tabButton = $('<li />', { 'class': 'nav-item' })
     .html('<a href=\'#control-sidebar-theme-demo-options-tab\' class=\'active\' data-toggle=\'tab\'>'
-      + 'Settings'
+      + 'Apariencia'
       + '</a>')
 
   // Add the tab button to the right sidebar tabs
@@ -183,12 +183,12 @@ $(function () {
   // Layout options
   $demoSettings.append(
     '<h4 class="control-sidebar-heading">'
-    + 'Layout Options'
+    + 'Opciones de Visualización'
     + '</h4>'
     // Fixed layout
 	+ '<div class="flexbox mb-15">'
 	+ '<label for="layout_fixed" class="control-sidebar-subheading">'
-    + 'Fixed layout'
+    + 'Barra de Navegación Fija'
     + '</label>'
 	+ '<label class="switch switch-border switch-danger">'
 	+ '<input type="checkbox" data-layout="fixed" id="layout_fixed">'
@@ -201,10 +201,10 @@ $(function () {
     // Boxed layout
 	+ '<div class="flexbox mb-15">'
 	+ '<label for="layout_fixed" class="control-sidebar-subheading">'
-    + 'Boxed Layout'
+    + 'Ancho Completo'
     + '</label>'
 	+ '<label class="switch switch-border switch-danger">'
-	+ '<input type="checkbox" data-layout="layout-boxed" id="layout_boxed">'
+	+ '<input type="checkbox" data-layout="layout-boxed" id="layout_boxed" checked="checked">'
 	+ '<span class="switch-indicator"></span>'
 	+ '<span class="switch-description"></span>'
 	+ '</label>'
@@ -213,7 +213,7 @@ $(function () {
     // Sidebar Toggle
 	+ '<div class="flexbox mb-15">'
 	+ '<label for="layout_fixed" class="control-sidebar-subheading">'
-    + 'Toggle Sidebar'
+    + 'Colapsar Barra Lateral'
     + '</label>'
 	+ '<label class="switch switch-border switch-danger">'
 	+ '<input type="checkbox" data-layout="sidebar-collapse" id="toggle_sidebar">'
@@ -225,7 +225,7 @@ $(function () {
     // Control Sidebar Toggle
 	+ '<div class="flexbox mb-15">'
 	+ '<label for="layout_fixed" class="control-sidebar-subheading">'
-    + 'Toggle Right Sidebar Slide'
+    + 'Alternar Deslizamiento Barra Lateral Derecha'
     + '</label>'
 	+ '<label class="switch switch-border switch-danger">'
 	+ '<input type="checkbox" data-controlsidebar="control-sidebar-open" id="toggle_right_sidebar">'
@@ -237,10 +237,10 @@ $(function () {
     // Control Sidebar Skin Toggle
 	+ '<div class="flexbox mb-15">'
 	+ '<label for="layout_fixed" class="control-sidebar-subheading">'
-    + 'Toggle Right Sidebar Skin'
+    + 'Oscurecer Barra Lateral Derecha'
     + '</label>'
 	+ '<label class="switch switch-border switch-danger">'
-	+ '<input type="checkbox" data-sidebarskin="toggle" id="toggle_right_sidebar_skin">'
+	+ '<input type="checkbox" data-sidebarskin="toggle" id="toggle_right_sidebar_skin" checked="checked">'
 	+ '<span class="switch-indicator"></span>'
 	+ '<span class="switch-description"></span>'
 	+ '</label>'
@@ -262,12 +262,12 @@ $(function () {
             + '<div class="clearfix"><span style="display:block; width: 30%; float: left; height: 60px; background: #242a33;"></span><span style="display:block; width: 70%; float: left; height: 60px; background: #f4f6f9;"></span></div>'
             + '</a>')
   $skinsList.append($skinBlack)
-  var $skinPurple =
+  var $skinHolisticBlue =
         $('<li />', { style: 'float:left; width: 33.33333%; padding: 5px 20px 20px 0px;' })
-          .append('<a href="javascript:void(0)" data-skin="skin-purple" style="display: block;" class="clearfix full-opacity-hover">'
-            + '<div><span style="display:block; width: 30%; float: left; height: 60px; background: #242a33;"></span><span class="bg-purple" style="display:block; width: 70%; float: left; height: 60px;"></span></div>'
+          .append('<a href="javascript:void(0)" data-skin="skin-holistic-blue" style="display: block;" class="clearfix full-opacity-hover">'
+            + '<div><span style="display:block; width: 30%; float: left; height: 60px; background: #242a33;"></span><span class="bg-holistic-blue" style="display:block; width: 70%; float: left; height: 60px;"></span></div>'
             + '</a>')
-  $skinsList.append($skinPurple)
+  $skinsList.append($skinHolisticBlue)
   var $skinGreen =
         $('<li />', { style: 'float:left; width: 33.33333%; padding: 5px 20px 20px 0px;' })
           .append('<a href="javascript:void(0)" data-skin="skin-green" style="display: block;" class="clearfix full-opacity-hover">'
@@ -286,6 +286,7 @@ $(function () {
             + '<div><span style="display:block; width: 30%; float: left; height: 60px; background: #242a33;"></span><span class="bg-yellow" style="display:block; width: 70%; float: left; height: 60px;"></span></div>'
             + '</a>')
   $skinsList.append($skinYellow)
+  
 
   // Light sidebar skins
   var $skinBlueLight =
@@ -327,7 +328,7 @@ $(function () {
 
   
 
-  $demoSettings.append('<h4 class="control-sidebar-heading">Skins</h4>')
+  $demoSettings.append('<h4 class="control-sidebar-heading">Temas</h4>')
   $demoSettings.append($skinsList)
 
   $tabPane.append($demoSettings)
