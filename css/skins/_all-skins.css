@@ -1312,8 +1312,9 @@ Project:	Superieur Admin - Responsive Admin Template
 }
 
 
-/*---Skin: Holistic Blue (Material Palette: Indigo 900)#1a327e #534bae #000051---*/
+/*---Skin: Holistic Blue (Material Palette: Indigo 900) #1a237e #534bae #000051---*/
 
+/*---Main Header---*/
 .skin-holistic-blue .main-header .navbar {
   background-color: #1a237e;
 }
@@ -1322,6 +1323,7 @@ Project:	Superieur Admin - Responsive Admin Template
   background-color: #534bae;
 }
 }
+
 .skin-holistic-blue .main-header .navbar .nav > li > a {
   color: #ffffff;
 }
@@ -1335,6 +1337,7 @@ Project:	Superieur Admin - Responsive Admin Template
 .skin-holistic-blue.layout-top-nav .mega-dropdown > a.nav-link.dropdown-toggle:hover{
   background: rgba(0, 0, 0, 0);
   color: #f6f6f6;
+  background: #000051;
 }
 .skin-holistic-blue .main-header .navbar .sidebar-toggle {
   color: #ffffff;
@@ -1354,6 +1357,7 @@ Project:	Superieur Admin - Responsive Admin Template
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
+/*---Sidebar---*/
 .skin-holistic-blue .sidebar-menu li.header {
     color: #ffffff;
 	opacity: 1;
@@ -1380,9 +1384,12 @@ Project:	Superieur Admin - Responsive Admin Template
 .skin-holistic-blue .sidebar-menu>li>a>.fa, .skin-holistic-blue .sidebar-menu>li>a>.glyphicon, .skin-holistic-blue .sidebar-menu>li>a>.ion, .skin-holistic-blue .sidebar-menu>li>a>i {
     color: #ffffff;
 }
+.skin-holistic-blue .sidebar-menu>li.menu-open {
+  background: #000051;
+}
 .skin-holistic-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 0px;
-  background: #534bae;
+  background: #000051;
 }
 .skin-holistic-blue .sidebar-menu>li.user-profile:hover>a .email-id {
     color: #cccccc;
@@ -1394,6 +1401,16 @@ Project:	Superieur Admin - Responsive Admin Template
 .skin-holistic-blue .sidebar a:hover {
   text-decoration: none;
 }
+.skin-holistic-blue .sidebar li > a:hover {
+  color: #ffffff;
+  background-color: #332d89;
+}
+.skin-holistic-blue .sidebar li.menu-open > a:hover,
+.skin-holistic-blue .sidebar li.menu-open > a:focus {
+  color: #ffffff;
+  background-color: #000051;
+}
+/*---Sidebar Form---*/
 .skin-holistic-blue .sidebar-form {
   border-radius: 3px;
   border: 1px solid #898989;
@@ -1424,8 +1441,8 @@ Project:	Superieur Admin - Responsive Admin Template
   border-bottom-left-radius: 0;
 }
 .skin-holistic-blue .main-header .logo .logo-mini .dark-logo, .skin-holistic-blue .main-header .logo .logo-lg .dark-logo {
-    display: none;
+  display: none;
 }
 .skin-holistic-blue .main-header .logo .logo-mini .light-logo, .skin-holistic-blue .main-header .logo .logo-lg .light-logo {
-    display: block;
+  display: block;
 }
