@@ -1401,15 +1401,24 @@ Project:	Superieur Admin - Responsive Admin Template
 .skin-holistic-blue .sidebar a:hover {
   text-decoration: none;
 }
-.skin-holistic-blue .sidebar li > a:hover {
-  color: #ffffff;
-  background-color: #332d89;
-}
+.skin-holistic-blue .sidebar li.menu-open > a,
 .skin-holistic-blue .sidebar li.menu-open > a:hover,
-.skin-holistic-blue .sidebar li.menu-open > a:focus {
+.skin-holistic-blue .sidebar li.menu-open > a:focus,
+.skin-holistic-blue .sidebar li.menu-open > a:active {
   color: #ffffff;
   background-color: #000051;
 }
+
+.skin-holistic-blue .sidebar li > a:hover,
+.skin-holistic-blue .sidebar li > a:focus,  
+.skin-holistic-blue .sidebar li > a:active {
+  color: #ffffff;
+  background-color: #332d89;
+}
+.skin-holistic-blue .sidebar li .active > a {
+  color: #ffffff;
+  background-color: #332d89;
+}  
 /*---Sidebar Form---*/
 .skin-holistic-blue .sidebar-form {
   border-radius: 3px;
